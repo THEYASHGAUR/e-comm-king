@@ -1,7 +1,23 @@
 import React from 'react'
-import Image from 'next/image'
+import Image from 'next/image' 
 
-const Card = ({ title, price  }: { title: string, price: number  }) => {
+interface CardProps {
+  img: string;
+  title: string;
+  rating: number;
+  platformImg: string;
+  price: number;
+  discount : number
+}
+
+const Card: React.FC<CardProps> = ({
+  img , 
+  title ,
+  rating,
+  platformImg,
+  price ,
+  discount 
+}) => {
   return (
     <>
        <div className="w-[300px] rounded-md border">
@@ -15,7 +31,7 @@ const Card = ({ title, price  }: { title: string, price: number  }) => {
          {title}
         </h1>
         <p className="mt-3 text-sm text-gray-600">
-          Lorem ipsum dolor sit  consectetur 
+          {rating}
         </p>
         <div className="mt-4">
           <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
@@ -27,12 +43,17 @@ const Card = ({ title, price  }: { title: string, price: number  }) => {
           <span className="mb-2 mr-2 inline-block rounded-full bg-gray-100 px-3 py-1 text-[10px] font-semibold text-gray-900">
             #Laptop
           </span>
+          <Image src="/wallpaper.jpg" alt="wallpaper"
+      className="h-[50px] w-32 rounded-t-md object-cover"
+        width={30}
+        height={30}
+      />
         </div>
         <button
           type="button"
           className="mt-4 w-full rounded-sm bg-black px-2 py-1.5 text-sm font-semibold text-white shadow-sm hover:bg-black/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
         >
-        {price}
+        {price} {discount}
         </button>
       </div>
     </div>

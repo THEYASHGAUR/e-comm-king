@@ -34,7 +34,7 @@ const SwiperCard = ( ) => {
            return (
 
         <SwiperSlide key={p.id}>
-        <Card key={p.id} title={p.title}  price={p.price}  />
+        <Card  img={''} key={p.id} {...p}  />
         </SwiperSlide>
            )
         })

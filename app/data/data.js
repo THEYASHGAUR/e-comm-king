@@ -1,76 +1,76 @@
-import wallpaper from "@/public/wallpaper.jpg" ; 
 
 
-const PopularProducts = [
+
+const PopularProducts   = [
     {
         id : "P1" , 
-        image : {wallpaper} , 
+        image : "/ " , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : "/ " , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P2" , 
-        image : {wallpaper} , 
+        image : "/" , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : " /" , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P3" , 
-        image : {wallpaper} , 
+        image : " /" , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : " /" , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P4" , 
-        image : {wallpaper} , 
+        image : "/ " , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : "/ " , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P5" , 
-        image : {wallpaper} , 
+        image : "/" , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : " /" , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P6" , 
-        image : {wallpaper} , 
+        image : "/" , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : "/ " , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P7" , 
-        image : {wallpaper} , 
+        image : "/" , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : " /" , 
         price : 9999 , 
         discount : 16
     } , 
     {
         id : "P8" , 
-        image : {wallpaper} , 
+        image : "/" , 
         title : "Realme" ,  
         rating : 4.5 , 
-        platformImg : " " , 
+        platformImg : "/ " , 
         price : 9999 , 
         discount : 16
     } , 
