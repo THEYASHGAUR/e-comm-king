@@ -1,6 +1,7 @@
 "use client"
 import Image from 'next/image';
 import React , {useState}from 'react' ; 
+import Logo from './images/logo.png';
 import {AiOutlineMenu , AiOutlineClose} from "react-icons/ai"
 
 const Navbar = () => {
@@ -31,7 +32,7 @@ const [isMenuOpen, setIsMenuOpen] = useState(false)
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-2 sm:px-6 lg:px-8">
         <div className="inline-flex items-center space-x-2">
           <span>
-            <Image src = "/images/logo.png" alt='logo' width={30} height={30}   />
+            <Image src = {Logo} alt='logo' width={30} height={30}   />
           
           </span>
         
